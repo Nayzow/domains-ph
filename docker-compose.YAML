@@ -1,0 +1,11 @@
+version: '3'
+services:
+  api:
+    image: nayzow/dns-services-api
+    ports:
+      - "8888:8888"
+
+  app:
+    image: nayzow/dns-services-frontend
+    ports:
+      - "80:80"
