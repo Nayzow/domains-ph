@@ -16,12 +16,12 @@ La configuration YAML pour le déploiement des services est également présent�
 
 ### Frontend :
 - Web App Angular (Typescript)
-- Github : https://github.com/Nayzow/DNS-Services-Frontend
+- Github : https://github.com/Nayzow/dns-services-frontend
 - Docker Hub : https://hub.docker.com/r/nayzow/dns-services-frontend
 
 ### Backend :
 - Api FastApi (Python)
-- Github : https://github.com/Nayzow/DNS-Services-API
+- Github : https://github.com/Nayzow/dns-services-api
 - Docker Hub : https://hub.docker.com/r/nayzow/dns-services-api
 
 ### Nginx :
@@ -56,7 +56,7 @@ services:
       - "80:80"
 ```
 
-Lien du fichier de déploiement : https://github.com/Nayzow/Domain-sh/blob/main/docker-compose.YAML
+Lien du fichier de déploiement : https://github.com/Nayzow/domains-ph/blob/main/docker-compose.YAML
 
 Et ensuite d'effectuer cette commande dans le répertoire courant du fichier "docker-compose.yaml" :
 
