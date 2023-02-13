@@ -45,18 +45,17 @@ Le déploiement est configuré pour tourner en local. Pour déployer le projet i
 ```yaml
 version: '3'
 services:
-  frontend:
-    image: nayzow/dns-services-frontend
-    ports:
-      - "80:80"
-    depends_on:
-      - api
-
   api:
     image: nayzow/dns-services-api
     ports:
       - "8888:8888"
+
+  app:
+    image: nayzow/dns-services-frontend
+    ports:
+      - "80:80"
 ```
+
 Lien du fichier de déploiement : https://github.com/Nayzow/Domain-sh/blob/main/docker-compose.YAML
 
 Et ensuite d'effectuer cette commande dans le répertoire courant du fichier "docker-compose.yaml" :
