@@ -10,7 +10,7 @@ La configuration YAML pour le déploiement des services est également présent�
 
 ## Présentation
 
-![presentation.gif](resources%2Fpresentation.gif)
+![presentation.gif](resources/presentation.gif)
 
 ## Documentation
 
