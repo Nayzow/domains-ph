@@ -77,7 +77,7 @@ Pour que le projet tourne dans un environnement de production il faut lancer l'a
 ```typescript
 export const environment = {  
   production: true,  
-  apiUrl: 'http://40.68.218.243:8888'  
+  apiUrl: 'http://40.68.218.243/api'  
 };
 ```
 
