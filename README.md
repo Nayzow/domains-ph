@@ -68,9 +68,9 @@ L'application Web est désormais disponible à l'adresse http://localhost
 
 L'API est désormais disponible à l'adresse http://localhost:8888
 
-## Production
-
 Vous pouvez également copier la configuration YAML dans la section custom stack sur Portainer ou sur un autre service d'orchéstration de containers.
+
+## Production
 
 Pour que le projet tourne dans un environnement de production il faut lancer l'application en mode production aprés avoir configurer la variable d'environnement "apiUrl" pour les requêtes cotés client dans l'application Angular, par exemple :
 
