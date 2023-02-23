@@ -2,7 +2,7 @@
 
 ## Description
 
-L'application web Domains.ph a pour but de recenser et de cartographier des sites potentiels de phishing frauduleux. L'application est réactive et profite donc également d'un affichage pour mobile.
+L'application web Domains.ph a pour but de recenser et de cartographier des potentiels sites de phishing frauduleux. L'application est réactive et profite donc également d'un affichage pour mobile.
 
 La documentation de l'API FastAPI et de l'application web Angular, ainsi que leur code source, sont disponibles sur leurs liens respectifs sur Github. Une image Docker de chaque projet est également accessible sur Docker Hub via les liens fournis.
 
