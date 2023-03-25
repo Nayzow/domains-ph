@@ -1,0 +1,50 @@
+#map {
+  margin: 4px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1250px) {
+  #map {
+    margin: 35px auto;
+    width: 85%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+#map {
+  background-color: #f9f9f9; /* Couleur de fond */
+  overflow: hidden; /* Cache les parties de la carte qui dépassent de la zone visible */
+}
+
+#map img {
+  max-width: none; /* Permet aux images de la carte de s'étendre sur la zone visible */
+}
+
+#map .leaflet-control-attribution {
+  display: none; /* Masque l'attribution Leaflet par défaut */
+}
+
+#map .leaflet-control-container {
+  margin-right: 10px; /* Ajoute une marge à droite pour éviter que les contrôles ne débordent */
+}
+
+#map .leaflet-control-zoom-in,
+#map .leaflet-control-zoom-out {
+  background-color: #fff; /* Change la couleur de fond des boutons de zoom */
+  border-radius: 5px; /* Arrondi les coins des boutons de zoom */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Ajoute une ombre aux boutons de zoom */
+}
+
+#map .leaflet-control-zoom-in:hover,
+#map .leaflet-control-zoom-out:hover {
+  background-color: #f1f1f1; /* Change la couleur de fond des boutons de zoom au survol */
+}
+
+#map .leaflet-container {
+  border-radius: 10px; /* Arrondi les coins du conteneur Leaflet */
+}

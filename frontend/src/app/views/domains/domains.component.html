@@ -1,0 +1,11 @@
+<h2>Entrez le nom de domaine dont vous souhaitez voir la liste des potentiels sites de phishing frauduleux</h2>
+<app-searchbar (submit)="submit($event)"></app-searchbar>
+
+<div [@domainsAnimation]="domains.length">
+  <div class="domains">
+    <a *ngFor="let domain of domains" [routerLink]="['/domains/' +  domain.domain] " class="domain">
+      <h4>{{ domain.domain }}</h4>
+      <h5>({{ domain.fuzzer }})</h5>
+    </a>
+  </div>
+</div>

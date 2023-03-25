@@ -1,0 +1,40 @@
+:host .domains {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+:host .domain {
+  color: #F2F3F4;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 2.8rem;
+  text-shadow: 3px 2px #000000;
+  background-color: #334155;
+  border-radius: 99999px;
+  width: 175px;
+  height: 175px;
+  box-shadow: 0 0 18px 0 #000000;
+  transform: translateY(1.5em);
+  transition: transform ease-in-out 200ms;
+}
+
+:host .domain:hover {
+  color: #334155;
+  background-color: #d3d3d3;
+  text-shadow: 3px 2px #8d8d8d;
+  transform: scale(1.01);
+  box-shadow: 0 0 8px 0 #F2F3F4;
+}
+
+:host .domain > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+}

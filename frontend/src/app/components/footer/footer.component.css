@@ -1,0 +1,39 @@
+:host footer {
+  display: flex;
+  color: #1E293B;
+  background-color: #F2F3F4;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 70px;
+}
+
+:host .main {
+  margin-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr );
+}
+
+:host .row {
+  margin-top: 50px;
+}
+
+:host .footer-header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+:host .copyright {
+  text-align: center;
+}
+
+:host .copyright p {
+  padding: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}

@@ -1,0 +1,19 @@
+:host .nav-object {
+  transition: transform 150ms, text-decoration-color 600ms;
+  color: #1E293B;
+  margin-left: 2%;
+  margin-top: 1.5%;
+}
+
+:host .nav-object:hover {
+  color: #1E293B;
+  text-decoration: underline 0.12em #1E293B;
+  transform: scale(1.08);
+}
+
+:host .nav-title {
+  color: #1E293B;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1%;
+}

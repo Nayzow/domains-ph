@@ -1,0 +1,60 @@
+@import "~leaflet/dist/leaflet.css";
+
+body {
+  background-color: #1E293B;
+  color: #F2F3F4;
+}
+
+h1 {
+  margin: 35px 20px 20px 50px;
+  text-shadow: 1px 1px #F2F3F4;
+  font-size: 5.3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.50rem;
+  font-weight: bold;
+  margin: 25px 25px 25px 50px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 25px;
+}
+
+h4 {
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+h5 {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.logo {
+  transition: transform ease-in-out 180ms;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+}
+
+.logo:hover {
+  transform: rotateZ(-17deg) scale(1.05);
+}

@@ -1,0 +1,54 @@
+<h1>Nom de domaine : {{domainName}}</h1>
+<div class="data-container">
+  <ng-container *ngIf="domain">
+    <div class="container">
+      <h3><img src="../../../assets/images/icons/localisation.png" height="30" width="30"/> Localisation</h3>
+      <app-map *ngIf="domain.location?.lat && domain.location?.lon; else noLocation" [latitude]="domain.location?.lat" [longitude]="domain.location?.lon"></app-map>
+    </div>
+
+    <ng-template #noLocation>
+      <ul>
+        <li>Géolocalisation non disponible pour ce domaine.</li>
+      </ul>
+    </ng-template>
+
+    <div class="container">
+      <h3><img src="../../../assets/images/icons/information.png" height="28" width="28"/> Informations</h3>
+      <ul>
+        <li>IP : {{domain.location?.query || 'Non disponible'}}</li>
+        <li>Continent : {{domain.location?.continent || 'Non disponible'}}</li>
+        <li>Pays : {{domain.location?.country || 'Non disponible'}}</li>
+        <li>Region : {{domain.location?.regionName || 'Non disponible'}}</li>
+        <li>Ville : {{domain.location?.city || 'Non disponible'}}</li>
+        <li>Code postal : {{domain.location?.zip || 'Non disponible'}}</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h3><img src="../../../assets/images/icons/connexion.png" height="28" width="28"/> Connexion</h3>
+      <ul>
+        <li>Reverse DNS : {{domain.location?.reverse || 'Non disponible'}}</li>
+        <li>Connexion mobile (cellulaire) : {{domain.location?.mobile ? 'Oui' : 'Non'}}</li>
+        <li>Proxy, VPN ou Tor exit address : {{domain.location?.proxy ? 'Oui' : 'Non'}}</li>
+        <li>Hosting ou data center : {{domain.location?.hosting ? 'Oui' : 'Non'}}</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h3><img src="../../../assets/images/icons/fournisseur.png" height="28" width="28"/> Fournisseur</h3>
+      <ul>
+        <li>ISP : {{domain.location?.isp || 'Non disponible'}}</li>
+        <li>Organisation : {{domain.location?.org || 'Non disponible'}}</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h3>Autre</h3>
+      <ul>
+        <li>Timezone : {{domain.location?.timezone || 'Non disponible'}}</li>
+        <li>Devise : {{domain.location?.currency || 'Non disponible'}}</li>
+        <li>Achetable : {{domain.available ? 'Oui' : 'Non'}}</li>
+      </ul>
+    </div>
+  </ng-container>
+</div>
